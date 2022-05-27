@@ -26,4 +26,4 @@ Although providing a working solution is good, there are other factors we will c
 
 TODO
 
-![Image of actual outcome](/images/actual-outcome.png?raw=true)
+![Image of actual outcome](/images/actual-outcome2.png?raw=true)
