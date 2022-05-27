@@ -32,3 +32,7 @@ To build and run:
 You should see the correct solution printed as below.
 
 ![Image of actual outcome](/images/actual-outcome2.png?raw=true)
+
+## Links
+- Rubik's Cube Solver: https://rubiks-cube-solver.com/
+- Rubik's Cube Notation: https://getgocube.com/learn/rubiks-cube-notation/ 
