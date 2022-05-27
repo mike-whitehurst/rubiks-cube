@@ -24,6 +24,11 @@ Although providing a working solution is good, there are other factors we will c
 
 ## Build & Run
 
-TODO
+To build and run:
+1. Using Visual Studio 2022, open \RubiksCubeSolution\RubiksCubeSolution.sln
+2. Press the play/start button to run ConsoleApp
+3. Scroll up in the console window to read through the output
+
+You should see the correct solution printed as below.
 
 ![Image of actual outcome](/images/actual-outcome2.png?raw=true)
