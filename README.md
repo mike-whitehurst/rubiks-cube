@@ -14,7 +14,9 @@ To test your solution, print out the colours on each face after applying the fol
 5. Left face clockwise 90°
 6. Down face anti-clockwise 90°
 
-You should print out the faces using the exploded view (aka flat view).
+You should print out the faces using the exploded view below.
+
+![Image of desired outcome](/images/desired-outcome.png?raw=true)
 
 You do not need to provide a UI, and a solution that prints out the solution using a console write statements is perfectly acceptable.
 
@@ -23,3 +25,5 @@ Although providing a working solution is good, there are other factors we will c
 ## Build & Run
 
 TODO
+
+![Image of actual outcome](/images/actual-outcome.png?raw=true)
