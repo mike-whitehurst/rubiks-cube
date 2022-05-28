@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{727092BA-7712-4485-A1E7-0F68B4931A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubeLogic", "CubeLogic\CubeLogic.csproj", "{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeLogic", "CubeLogic\CubeLogic.csproj", "{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{423141F4-B869-46A0-A0DD-C57EA07C25C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423141F4-B869-46A0-A0DD-C57EA07C25C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423141F4-B869-46A0-A0DD-C57EA07C25C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423141F4-B869-46A0-A0DD-C57EA07C25C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423141F4-B869-46A0-A0DD-C57EA07C25C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
