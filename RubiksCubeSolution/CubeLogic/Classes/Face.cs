@@ -34,7 +34,7 @@ namespace CubeLogic.Classes
                 Squares[2, 0].Color.ToShortString(),
                 Squares[2, 1].Color.ToShortString(),
                 Squares[2, 2].Color.ToShortString()
-                );
+            );
         }
     }
 }

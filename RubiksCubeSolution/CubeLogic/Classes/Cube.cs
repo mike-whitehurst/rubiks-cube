@@ -6,15 +6,10 @@ namespace CubeLogic.Classes
     public class Cube
     {
         public Face FrontFace { get; private set; }
-
         public Face RightFace { get; private set; }
-
         public Face UpFace { get; private set; }
-
         public Face BackFace { get; private set; }
-
         public Face LeftFace { get; private set; }
-
         public Face DownFace { get; private set; }
 
         public Cube()
