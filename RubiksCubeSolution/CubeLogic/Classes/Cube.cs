@@ -202,21 +202,15 @@ namespace CubeLogic.Classes
         private static void Shift(DirectionTypes direction,
             ref Square a, ref Square b, ref Square c, ref Square d)
         {
-            if (direction == DirectionTypes.Clockwise)
+            if (DirectionTypes.Clockwise == direction)
             {
-                Square p = d;
-                d = c;
-                c = b;
-                b = a;
-                a = p;
+                Square p = d; 
+                d = c; c = b; b = a; a = p;
             }
-            else
+            else if (DirectionTypes.AntiClockwise == direction)
             {
-                Square p = a;
-                a = b;
-                b = c;
-                c = d;
-                d = p;
+                Square p = a; 
+                a = b; b = c; c = d; d = p;
             }
         }
     }
