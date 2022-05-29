@@ -37,7 +37,7 @@ You should see the correct solution printed as below.
 
 To run tests:
 1. Using Visual Studio 2022, open \RubiksCubeSolution\RubiksCubeSolution.sln
-2. Right click on the Tests project and choose Run Tests 
+2. Right click on the CubeLogicTests project and choose Run Tests 
 3. The results are in the Test Explorer window
 
 ## Links
