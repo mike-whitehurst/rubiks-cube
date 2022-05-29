@@ -3,7 +3,7 @@ using CubeLogic.Enums;
 
 namespace Tests
 {
-    public class CubeLogicTests
+    public class CubeTests
     {
         [Fact]
         public void AlwaysPass()
@@ -222,6 +222,28 @@ namespace Tests
             Assert.Equal("Y,B,W;O,B,Y;Y,Y,W", cube.BackFace.ToString());
             Assert.Equal("G,Y,Y;O,O,G;B,G,O", cube.LeftFace.ToString());
             Assert.Equal("G,G,B;R,Y,R;R,G,G", cube.DownFace.ToString());
+        }
+
+        [Fact]
+        public void Reset()
+        {
+            Cube cube = new();
+
+            cube.RotateFrontFace(Direction.Clockwise);
+            cube.RotateRightFace(Direction.AntiClockwise);
+            cube.RotateUpFace(Direction.Clockwise);
+            cube.RotateBackFace(Direction.AntiClockwise);
+            cube.RotateLeftFace(Direction.Clockwise);
+            cube.RotateDownFace(Direction.AntiClockwise);
+
+            cube.Reset();
+
+            Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
+            Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
+            Assert.Equal("W,W,W;W,W,W;W,W,W", cube.UpFace.ToString());
+            Assert.Equal("B,B,B;B,B,B;B,B,B", cube.BackFace.ToString());
+            Assert.Equal("O,O,O;O,O,O;O,O,O", cube.LeftFace.ToString());
+            Assert.Equal("Y,Y,Y;Y,Y,Y;Y,Y,Y", cube.DownFace.ToString());
         }
     }
 }
