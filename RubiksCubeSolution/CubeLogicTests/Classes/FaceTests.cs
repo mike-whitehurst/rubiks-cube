@@ -28,6 +28,7 @@ namespace Tests.Classes
         [InlineData(ColorTypes.Blue, "B,B,B;B,B,B;B,B,B")]
         [InlineData(ColorTypes.Orange, "O,O,O;O,O,O;O,O,O")]
         [InlineData(ColorTypes.Yellow, "Y,Y,Y;Y,Y,Y;Y,Y,Y")]
+        [InlineData((ColorTypes)(-1), "_,_,_;_,_,_;_,_,_")]
         public void OverrideToString(ColorTypes color, string expected)
         {
             Face face = new(color);
