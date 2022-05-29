@@ -26,8 +26,7 @@ Although providing a working solution is good, there are other factors we will c
 
 To build and run:
 1. Using Visual Studio 2022, open \RubiksCubeSolution\RubiksCubeSolution.sln
-2. Press the play/start button to run ConsoleApp
-3. Scroll up in the console window to read through the output
+2. Debug > Start Without Debugging
 
 You should see the correct solution printed as below.
 
@@ -37,9 +36,9 @@ You should see the correct solution printed as below.
 
 To run tests:
 1. Using Visual Studio 2022, open \RubiksCubeSolution\RubiksCubeSolution.sln
-2. Right click on the CubeLogicTests project and choose Run Tests 
-3. The results are in the Test Explorer window
+2. Test > Run All Tests
 
 ## Links
 - Rubik's Cube Solver: https://rubiks-cube-solver.com/
 - Rubik's Cube Notation: https://getgocube.com/learn/rubiks-cube-notation/ 
+- Code Coverage Reporting: https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-code-coverage?tabs=windows 
