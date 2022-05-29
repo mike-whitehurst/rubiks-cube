@@ -1,12 +1,12 @@
-﻿using System.Drawing;
+﻿using CubeLogic.Enums;
 
 namespace CubeLogic.Classes
 {
     public class Square
     {
-        public Color Color { get; private set; }
+        public ColorTypes Color { get; private set; }
         
-        public Square(Color color)
+        public Square(ColorTypes color)
         {
             Color = color;
         }

@@ -1,5 +1,4 @@
 ﻿using CubeLogic.Enums;
-using System.Drawing;
 
 namespace CubeLogic.Classes
 {
@@ -19,15 +18,15 @@ namespace CubeLogic.Classes
 
         public void Reset()
         {
-            FrontFace = new Face(Color.Green);
-            RightFace = new Face(Color.Red);
-            UpFace = new Face(Color.White);
-            BackFace = new Face(Color.Blue);
-            LeftFace = new Face(Color.Orange);
-            DownFace = new Face(Color.Yellow);
+            FrontFace = new Face(ColorTypes.Green);
+            RightFace = new Face(ColorTypes.Red);
+            UpFace = new Face(ColorTypes.White);
+            BackFace = new Face(ColorTypes.Blue);
+            LeftFace = new Face(ColorTypes.Orange);
+            DownFace = new Face(ColorTypes.Yellow);
         }
 
-        public void RotateFrontFace(Direction direction)
+        public void RotateFrontFace(DirectionTypes direction)
         {
             RotateFace(FrontFace, direction);
 
@@ -53,7 +52,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        public void RotateRightFace(Direction direction)
+        public void RotateRightFace(DirectionTypes direction)
         {
             RotateFace(RightFace, direction);
 
@@ -79,7 +78,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        public void RotateUpFace(Direction direction)
+        public void RotateUpFace(DirectionTypes direction)
         {
             RotateFace(UpFace, direction);
 
@@ -105,7 +104,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        public void RotateBackFace(Direction direction)
+        public void RotateBackFace(DirectionTypes direction)
         {
             RotateFace(BackFace, direction);
 
@@ -131,7 +130,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        public void RotateLeftFace(Direction direction)
+        public void RotateLeftFace(DirectionTypes direction)
         {
             RotateFace(LeftFace, direction);
 
@@ -157,7 +156,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        public void RotateDownFace(Direction direction)
+        public void RotateDownFace(DirectionTypes direction)
         {
             RotateFace(DownFace, direction);
 
@@ -183,7 +182,7 @@ namespace CubeLogic.Classes
             );
         }
 
-        private static void RotateFace(Face face, Direction direction)
+        private static void RotateFace(Face face, DirectionTypes direction)
         {
             Shift(direction,
                  ref face.Squares[0, 2],
@@ -200,10 +199,10 @@ namespace CubeLogic.Classes
            );
         }
 
-        private static void Shift(Direction direction,
+        private static void Shift(DirectionTypes direction,
             ref Square a, ref Square b, ref Square c, ref Square d)
         {
-            if (direction == Direction.Clockwise)
+            if (direction == DirectionTypes.Clockwise)
             {
                 Square p = d;
                 d = c;

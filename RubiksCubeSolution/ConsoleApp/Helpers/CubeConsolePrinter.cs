@@ -1,5 +1,5 @@
 ﻿using CubeLogic.Classes;
-using System.Drawing;
+using CubeLogic.Enums;
 
 namespace ConsoleApp.Helpers
 {
@@ -133,17 +133,17 @@ namespace ConsoleApp.Helpers
             Print("X ", GetConsoleColor(square.Color));
         }
 
-        private static ConsoleColor GetConsoleColor(Color color)
+        private static ConsoleColor GetConsoleColor(ColorTypes color)
         {
-            return color.Name switch
+            return color switch
             {
-                "Green" => ConsoleColor.Green,
-                "Red" => ConsoleColor.Red,
-                "White" => ConsoleColor.White,
-                "Blue" => ConsoleColor.Blue,
-                "Orange" => ConsoleColor.Cyan,
-                "Yellow" => ConsoleColor.Yellow,
-                _ => ConsoleColor.White,
+                ColorTypes.Green => ConsoleColor.Green,
+                ColorTypes.Red => ConsoleColor.Red,
+                ColorTypes.White => ConsoleColor.White,
+                ColorTypes.Blue => ConsoleColor.Blue,
+                ColorTypes.Orange => ConsoleColor.Cyan,
+                ColorTypes.Yellow => ConsoleColor.Yellow,
+                _ => ConsoleColor.Gray,
             };
         }
     }

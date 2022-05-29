@@ -1,7 +1,7 @@
 using CubeLogic.Classes;
 using CubeLogic.Enums;
 
-namespace Tests
+namespace Tests.Classes
 {
     public class CubeTests
     {
@@ -12,9 +12,11 @@ namespace Tests
         }
 
         [Fact]
-        public void NewCube()
+        public void Constructor()
         {
             Cube cube = new();
+
+            Assert.NotNull(cube);
 
             Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -29,7 +31,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateFrontFace(Direction.Clockwise);
+            cube.RotateFrontFace(DirectionTypes.Clockwise);
 
             Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("W,R,R;W,R,R;W,R,R", cube.RightFace.ToString());
@@ -44,7 +46,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateFrontFace(Direction.AntiClockwise);
+            cube.RotateFrontFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("Y,R,R;Y,R,R;Y,R,R", cube.RightFace.ToString());
@@ -59,7 +61,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateRightFace(Direction.Clockwise);
+            cube.RotateRightFace(DirectionTypes.Clockwise);
 
             Assert.Equal("G,G,Y;G,G,Y;G,G,Y", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -74,7 +76,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateRightFace(Direction.AntiClockwise);
+            cube.RotateRightFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("G,G,W;G,G,W;G,G,W", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -89,7 +91,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateUpFace(Direction.Clockwise);
+            cube.RotateUpFace(DirectionTypes.Clockwise);
 
             Assert.Equal("R,R,R;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("B,B,B;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -104,7 +106,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateUpFace(Direction.AntiClockwise);
+            cube.RotateUpFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("O,O,O;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("G,G,G;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -119,7 +121,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateBackFace(Direction.Clockwise);
+            cube.RotateBackFace(DirectionTypes.Clockwise);
 
             Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("R,R,Y;R,R,Y;R,R,Y", cube.RightFace.ToString());
@@ -134,7 +136,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateBackFace(Direction.AntiClockwise);
+            cube.RotateBackFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("G,G,G;G,G,G;G,G,G", cube.FrontFace.ToString());
             Assert.Equal("R,R,W;R,R,W;R,R,W", cube.RightFace.ToString());
@@ -149,7 +151,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateLeftFace(Direction.Clockwise);
+            cube.RotateLeftFace(DirectionTypes.Clockwise);
 
             Assert.Equal("W,G,G;W,G,G;W,G,G", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -164,7 +166,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateLeftFace(Direction.AntiClockwise);
+            cube.RotateLeftFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("Y,G,G;Y,G,G;Y,G,G", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;R,R,R", cube.RightFace.ToString());
@@ -179,7 +181,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateDownFace(Direction.Clockwise);
+            cube.RotateDownFace(DirectionTypes.Clockwise);
 
             Assert.Equal("G,G,G;G,G,G;O,O,O", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;G,G,G", cube.RightFace.ToString());
@@ -194,7 +196,7 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateDownFace(Direction.AntiClockwise);
+            cube.RotateDownFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("G,G,G;G,G,G;R,R,R", cube.FrontFace.ToString());
             Assert.Equal("R,R,R;R,R,R;B,B,B", cube.RightFace.ToString());
@@ -209,12 +211,12 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateFrontFace(Direction.Clockwise);
-            cube.RotateRightFace(Direction.AntiClockwise);
-            cube.RotateUpFace(Direction.Clockwise);
-            cube.RotateBackFace(Direction.AntiClockwise);
-            cube.RotateLeftFace(Direction.Clockwise);
-            cube.RotateDownFace(Direction.AntiClockwise);
+            cube.RotateFrontFace(DirectionTypes.Clockwise);
+            cube.RotateRightFace(DirectionTypes.AntiClockwise);
+            cube.RotateUpFace(DirectionTypes.Clockwise);
+            cube.RotateBackFace(DirectionTypes.AntiClockwise);
+            cube.RotateLeftFace(DirectionTypes.Clockwise);
+            cube.RotateDownFace(DirectionTypes.AntiClockwise);
 
             Assert.Equal("O,R,R;O,G,W;W,W,W", cube.FrontFace.ToString());
             Assert.Equal("Y,B,O;R,R,W;O,Y,R", cube.RightFace.ToString());
@@ -229,12 +231,12 @@ namespace Tests
         {
             Cube cube = new();
 
-            cube.RotateFrontFace(Direction.Clockwise);
-            cube.RotateRightFace(Direction.AntiClockwise);
-            cube.RotateUpFace(Direction.Clockwise);
-            cube.RotateBackFace(Direction.AntiClockwise);
-            cube.RotateLeftFace(Direction.Clockwise);
-            cube.RotateDownFace(Direction.AntiClockwise);
+            cube.RotateFrontFace(DirectionTypes.Clockwise);
+            cube.RotateRightFace(DirectionTypes.AntiClockwise);
+            cube.RotateUpFace(DirectionTypes.Clockwise);
+            cube.RotateBackFace(DirectionTypes.AntiClockwise);
+            cube.RotateLeftFace(DirectionTypes.Clockwise);
+            cube.RotateDownFace(DirectionTypes.AntiClockwise);
 
             cube.Reset();
 

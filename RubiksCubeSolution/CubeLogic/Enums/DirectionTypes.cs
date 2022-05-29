@@ -1,6 +1,6 @@
 ﻿namespace CubeLogic.Enums
 {
-    public enum Direction
+    public enum DirectionTypes
     {
         Clockwise,
         AntiClockwise,
