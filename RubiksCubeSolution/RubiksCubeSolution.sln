@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeLogic", "CubeLogic\CubeLogic.csproj", "{AAF7E63D-E45A-4DD6-AD47-6ED84779D497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{423141F4-B869-46A0-A0DD-C57EA07C25C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeLogicTests", "CubeLogicTests\CubeLogicTests.csproj", "{423141F4-B869-46A0-A0DD-C57EA07C25C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
