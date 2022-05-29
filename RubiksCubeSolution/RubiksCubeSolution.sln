@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeLogic", "CubeLogic\Cube
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CubeLogicTests", "CubeLogicTests\CubeLogicTests.csproj", "{423141F4-B869-46A0-A0DD-C57EA07C25C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Tests", "_Tests", "{A3FC78FF-8C1A-44CA-B609-2F8A6AEB2525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{D5DB3BB0-5F30-4201-8CF0-246B4CDBB76A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{727092BA-7712-4485-A1E7-0F68B4931A07} = {D5DB3BB0-5F30-4201-8CF0-246B4CDBB76A}
+		{AAF7E63D-E45A-4DD6-AD47-6ED84779D497} = {D5DB3BB0-5F30-4201-8CF0-246B4CDBB76A}
+		{423141F4-B869-46A0-A0DD-C57EA07C25C8} = {A3FC78FF-8C1A-44CA-B609-2F8A6AEB2525}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C75953A5-9E31-4351-90BB-D946677DF4EC}
