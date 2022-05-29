@@ -39,6 +39,7 @@ To run tests:
 2. Test > Run All Tests
 
 ## Links
-- Rubik's Cube Solver: https://rubiks-cube-solver.com/
-- Rubik's Cube Notation: https://getgocube.com/learn/rubiks-cube-notation/ 
-- Code Coverage Reporting: https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-code-coverage?tabs=windows 
+- [Rubik's Cube Solver](https://rubiks-cube-solver.com/)
+- [Rubik's Cube Notation](https://getgocube.com/learn/rubiks-cube-notation/)
+- [Code Coverage (Automation)](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-code-coverage?tabs=windows)
+- [Fine Code Coverage (Visual Studio 2022 Extension)](https://marketplace.visualstudio.com/items?itemName=FortuneNgwenya.FineCodeCoverage2022)
